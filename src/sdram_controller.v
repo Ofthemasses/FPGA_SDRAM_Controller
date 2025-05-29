@@ -89,7 +89,7 @@ module sdram_controller(
 					
 	//commands {cs_n,ras_n,cas_n,we_n} REFER TO THE DATASHEET: winbond W9825G6KH
 	localparam[3:0]  cmd_precharge=4'b0010,
-						  cmd_NOP=4'b1111,
+						  cmd_NOP=4'b0111,
 						  cmd_activate=4'b0011,
 						  cmd_write=4'b0100,
 						  cmd_read=4'b0101,
